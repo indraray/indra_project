@@ -1,27 +1,20 @@
 *{
-   background-color: black;
+   background-color: rgb(0, 0, 0);
 }
+   /*--------------- navbar *-----------------------------------------------------------------------*/
 .exp{
-  
    margin: auto;
-   height: 65px;
-   width: 99%;
+   height: 60px;
    background-color: rgb(29, 29, 29);
    border-radius: 5px;
-   -webkit-box-shadow: 2px 2px 12px 0px rgba(102,255,0,1);
-   -moz-box-shadow: 2px 2px 12px 0px rgba(102,255,0,1);
-   box-shadow: 2px 2px 12px 0px rgba(102,255,0,1);
 }
- label.logo{
-   padding-top: auto;
-   margin-left: 100px;
-  display: inline;
-   color: aliceblue;
-   font-size: 35px;
-   font-weight: bold;
-    background-color:rgb(29, 29, 29) ;
+.border_of_navbar{
+   width: 100%;
+   border-radius: 5px;
+   padding: 2px;
+   background: linear-gradient(to right, rgb(1, 159, 43), rgb(132, 0, 255));
 }
-ul{
+.exp ul{
    list-style: none;
    float: right;
    display: flex;
@@ -29,21 +22,57 @@ ul{
 
 }
 
-ul li{
-   font-size: large;
+.exp ul li{
+   font-size: 20px;
    display: inline;
     background-color:rgb(29, 29, 29) ;
     position: relative;
    
 }
-ul li a{
+.exp ul li a{
    margin-right: 50px;
    color: rgb(255, 255, 255);
    background-color:rgb(29, 29, 29) ;
+   text-decoration: none;
 }
-a:hover{
+.exp a:hover{
    color: rgb(178, 245, 197);
    transform: 0.02s;
    transition-duration: 0.04s;
    
 }
+/* menu_annimation in navbar-------------------------------------------------------------- */
+.menu_container {
+   background-color:rgb(29, 29, 29) ;
+   padding: 10px 10px 10px 60px;
+   display: inline-block;
+   cursor: pointer;
+}
+/* 3 bars in the menu animation */
+ .bar1, .bar2, .bar3 {
+   width: 30px;
+   height: 5px;
+   background-color: #718800;
+   margin: 5px 0;
+   transition: 0.5s;
+}
+ 
+ /* Rotate first bar */
+ .change .bar1 {
+   transform: translate(0, 11px) rotate(-45deg);
+ }
+ 
+ /* Fade out the second bar */
+ .change .bar2 {opacity: 0;}
+ 
+ /* Rotate last bar */
+ .change .bar3 {
+   transform: translate(0, -11px) rotate(45deg);
+ }
+
+/* cartoon annimation part----------------------------------------------------------------- */
+ .cartoon_view_navbar ul li{
+    font-size: large;
+     background-color:rgb(29, 29, 29) ;
+     position: relative;
+ }
