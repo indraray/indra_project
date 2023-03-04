@@ -15,6 +15,7 @@ body{
    height: 60px;
    background-color: rgb(29, 29, 29);
    border-radius: 5px;
+   overflow: hidden;
 }
 .border_of_navbar{
    width: 100%;
@@ -24,21 +25,22 @@ body{
 }
 .exp ul{
    list-style: none;
-   float: right;
    display: flex;
    background-color:rgb(29, 29, 29) ;
-
+   
 }
 
 .exp ul li{
-   font-size: 20px;
    display: inline;
-    background-color:rgb(29, 29, 29) ;
-    position: relative;
+   background-color:rgb(29, 29, 29) ;
+   position: relative;
    
 }
 .exp ul li a{
+   font-size: 18px;
+   float: left;
    margin-right: 50px;
+   text-align: center;
    color: rgb(255, 255, 255);
    background-color:rgb(29, 29, 29) ;
    text-decoration: none;
@@ -48,6 +50,10 @@ body{
    transform: 0.02s;
    transition-duration: 0.04s;
    
+}
+.menu_container a.active{
+   background-color: aqua;
+   color: black;
 }
 /* menu_annimation in navbar-------------------------------------------------------------- */
 .menu_container {
@@ -78,9 +84,60 @@ body{
    transform: translate(0, -11px) rotate(45deg);
  }
 
+.exp .menu_container{
+   display: none;
+}
+/**media queries for navigation bar-------**/
+@media screen and (max-width: 1000px){
+   .exp a:not(:first-child){display: none;}
+   .menu_container a.menu_container{
+      float: right;
+      display: block;
+   }
+   
+}
+@media screen and(max-width: 1000px) {
+   .exp.responsive { position: relative;}
+   .exp.exp.responsive a.menu_container{
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+   .exp.exp.responsive a{
+      float: right;
+      display: block;
+      text-align: left;
+   }
+}
+
 /* cartoon annimation part----------------------------------------------------------------- */
- .cartoon_view_navbar ul li{
+ /* .cartoon_view_navbar ul li{
     font-size: large;
      background-color:rgb(29, 29, 29) ;
      position: relative;
+ } */
+
+ .navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
  }
+ .brand_title{
+   font-size: 1.5rem;
+   margin: 0.5rem;
+ }
+ .navbar_links ul{
+margin: 0;
+padding: 0;
+display: flex;
+ }
+.navbar_links li{
+   list-style: none;
+}
+.navbar_linksli a{
+   text-decoration: none;
+   color: white;
+   padding: 1rem;
+   
+}
