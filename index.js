@@ -1,14 +1,11 @@
-function clickMenu() {
+function myFunction() {
    x.classList.toggle("change");
  }
 
  //adding the responsive menu bar
- function myFunction() {
-  var x= document.getElementById("menu_container_id");
-  if(x.className==="menu_container"){
-    x.className += " responsive";
-  }
-  else{
-    x.className = "menu_container";
-  }
- }
+const menuBar = document.getElementsByClassName('menu_container')[0];
+const navbarLinks = document.getElementsByClassName('exp');
+
+menuBar.addEventListener('click', ()=>{
+  navbarLinks.classList.toggle('active');
+})
