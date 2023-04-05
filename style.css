@@ -157,9 +157,11 @@ body{
    color: white;
    width: 100%;
    height:auto;
-   padding-bottom: 20px;
+   padding-bottom: 30px;
    /* background-color:  white; */
-   background-image: linear-gradient(to right top, #6bd16d, #00d19c, #00cdc7, #00c5e4, #0fbaf1, #35b0f5, #57a5f6, #7699f1, #6f8df7, #6d80fa, #7171fc, #7a5ffb);
+   background-image: linear-gradient(to right top, #6bd16d, #00d19c, 
+   #00cdc7, #00c5e4, #0fbaf1, #35b0f5, #57a5f6, #7699f1, #6f8df7,
+    #6d80fa, #7171fc, #7a5ffb);
  }
  .explore_section h1{
    color: black;
@@ -185,7 +187,10 @@ body{
    margin: 10px 0;
    flex-basis: 30%;
    box-shadow: 0px 0px 5px 1px rgb(38, 255, 0);
-   background-image: linear-gradient(to right top, #000000, #131313, #1f1f1f, #2c2c2c, #393939, #3d3d41, #3e424a, #3d4853, #254854, #00484d, #00463b, #004322);
+   background-image: linear-gradient(to right top, #000000,
+                    #131313, #1f1f1f, #2c2c2c, #393939,
+                     #3d3d41, #3e424a, #3d4853, #254854,
+                      #00484d, #00463b, #004322);
  }
  .explore_items img{
    height: 100px;
@@ -202,5 +207,30 @@ body{
    background-color: rgb(107, 107, 107);
    color: white;
  }
+ /* ----------------break----------- */
+ .break{
+   height: 2px;
+   background: linear-gradient(to right, rgb(1, 159, 43), rgb(132, 0, 255));
+ }
  /*  Services section ------------------------------------- */
- 
+ .service_section{
+   color: white;
+   width: 100%;
+   height:auto;
+   padding: 30px 0 30px 0;
+   background-image: linear-gradient(to right top,
+                     #1200cd, #0063fa, #008ae8, 
+                     #00aaba, #00c395, #00c499, #00c59d,
+                      #00c6a1, #00adc5, #008ee7, #0063e7, #7100af);
+ }
+ .service_elements{
+   display: flex;
+   width: 80%;
+   height: 300px;
+   flex-wrap: wrap;
+   margin: auto;
+   justify-content: space-around;
+   background-color: #004322;
+   border: 3px solid black;
+   border-radius: 3px;
+ }
