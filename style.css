@@ -339,7 +339,7 @@ body{
 
  /* ----------------break----------- */
  .break{
-   height: 3px;
+   height: 2px;
    background: linear-gradient(to right, rgb(1, 159, 43), rgb(132, 0, 255));
  }
  
@@ -504,7 +504,7 @@ body{
  }
 
 
- /* foot */
+ /* footer ----------------------------------------------*/
  footer {
   position: absolute;
   bottom: 0;
@@ -581,11 +581,13 @@ body{
   color: rgb(41, 255, 69);
 }
 
+.break-light{
+  height: 1px;
+  background: linear-gradient(to right, rgb(132, 0, 255), rgb(1, 159, 43));
+}
 .footer-bottom {
-  background: #000;
-  width: 100vw;
-  padding: 20px;
-  padding-bottom: 40px;
+  background: #000000;
+  padding: 10px 45px 20px 45px;
   text-align: center;
 }
 
@@ -596,9 +598,9 @@ body{
 }
 
 .footer-bottom p a {
-  color: #ccc;
+  color: #d5e000;
   font-size: 16px;
-  text-decoration: none;
+  text-decoration: burlywood;
 }
 
 .footer-bottom span {
@@ -607,6 +609,9 @@ body{
 
 .footer-menu {
   float: right;
+  padding: auto;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 200;
 }
 
 .footer-menu ul {
@@ -614,31 +619,15 @@ body{
 }
 
 .footer-menu ul li {
-  padding-right: 10px;
   display: block;
 }
 
 .footer-menu ul li a {
   color: #cfd2d6;
   text-decoration: none;
-}
+} 
 
 .footer-menu ul li a:hover {
-  color: #27bcda;
-}
-
-@media (max-width: 500px) {
-  .footer-bottom p {
-    float: none;
-  }
-
-  .footer-menu ul {
-    display: flex;
-
-    margin-top: 10px;
-
-    margin-bottom: 20px;
-
-    text-align: center;
-  }
+  color: #2769da;
+  font-weight: bold;
 }
