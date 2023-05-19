@@ -140,7 +140,7 @@ body{
    color: white;
    margin: 10px 0;
    flex-basis: 30%;
-   box-shadow: 0px 0px 5px 1px rgb(38, 255, 0);
+   box-shadow: 0px 0px 5px 1px rgb(138, 255, 117);
    background-color: #000000;
  }
  .explore_items img{
@@ -431,7 +431,7 @@ body{
  }
  
  section span a{
-   color: #0ef;
+   color: rgb(68, 255, 0);
    text-decoration: none;
    transition: .5s;
  }
@@ -504,122 +504,100 @@ body{
  }
 
 
- 
+ /* foot */
  footer {
   position: absolute;
-
   bottom: 0;
-
   left: 0;
-
   right: 0;
-
-  background: #111;
-
   height: auto;
-
   width: 100vw;
-
-  padding-top: 40px;
-
-  color: #fff;
 }
 
 .footer-content {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   flex-direction: column;
-
   text-align: center;
+  background-image: url(Images/pngfind.com-connections-png-6603141.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:contain;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .footer-content h3 {
   font-size: 2.1rem;
-
   font-weight: 500;
-
   text-transform: capitalize;
-
   line-height: 3rem;
+  font-weight: bold;
 }
 
 .footer-content p {
-  max-width: 500px;
-
+  background-color: #000000 ;
+  font-weight:bold;
+  opacity: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 600px;
   margin: 10px auto;
-
   line-height: 28px;
-
-  font-size: 14px;
-
-  color: #cacdd2;
+  font-size: 20px;
+  color: #d1ffca;
 }
 
 .socials {
+  background-color: #000000;
+  opacity: 80%;
+  border-radius: 3px;
+  padding: 10px;
   list-style: none;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   margin: 1rem 0 3rem 0;
 }
 
 .socials li {
+  
   margin: 0 10px;
 }
 
 .socials a {
   text-decoration: none;
-
   color: #fff;
-
   padding: 5px;
 }
 
 .socials a i {
   font-size: 1.1rem;
-
   width: 20px;
-
   transition: color 0.4s ease;
 }
 
 .socials a:hover i {
-  color: aqua;
+  color: rgb(41, 255, 69);
 }
 
 .footer-bottom {
   background: #000;
-
   width: 100vw;
-
   padding: 20px;
-
   padding-bottom: 40px;
-
   text-align: center;
 }
 
 .footer-bottom p {
   float: left;
-
   font-size: 14px;
-
   word-spacing: 2px;
 }
 
 .footer-bottom p a {
   color: #ccc;
-
   font-size: 16px;
-
   text-decoration: none;
 }
 
@@ -637,13 +615,11 @@ body{
 
 .footer-menu ul li {
   padding-right: 10px;
-
   display: block;
 }
 
 .footer-menu ul li a {
   color: #cfd2d6;
-
   text-decoration: none;
 }
 
