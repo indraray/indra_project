@@ -1,5 +1,5 @@
 *{
-  color: #fff;
+  color: #ffffff;
   cursor: default; 
 }
 
@@ -345,6 +345,7 @@ body{
  
  #portfolio_header{
   text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
  }
  /* header{
    display: flex;
@@ -395,6 +396,12 @@ body{
    margin: 5% 10%;
    display: flex;
    align-items: center;
+   background-image: url(Images/android_dev.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size:contain;
+   opacity: 1;
+
  }
  
  section h2{
@@ -544,7 +551,7 @@ body{
   max-width: 600px;
   margin: 10px auto;
   line-height: 28px;
-  font-size: 20px;
+  font-size: 1rem;
   color: #d1ffca;
 }
 

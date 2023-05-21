@@ -1,0 +1,255 @@
+body{
+   background-color: black;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 10% 0 10%;
+   font-family: 'Courier New', Courier, monospace;
+ }
+ header h1 {
+   -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+   font-family: "Arial Black", sans-serif;
+   cursor: default;
+   font-size: 2em;
+   transition: 1s;
+ }
+ 
+header h1:hover {
+   color: rgb(255, 255, 255);
+   text-shadow: 0 0 50px rgb(47, 255, 0);
+ }
+
+ .navbar a {
+   display: inline-block;
+   margin-left: 30px;
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   font-size: 1.2em;
+   transition: .5s;
+   cursor: pointer;
+}
+ .navbar a:hover,
+ .navbar .active {
+   color: #6bff77;
+ }
+ .navbar a:hover {
+   text-shadow: 0 0 40px #9ee8ff;
+ }
+
+ .portfolio_div {
+   font-family: 'Courier New', Courier, monospace;
+   margin: 5% 10%;
+   display: flex;
+   align-items: center;
+   color: white;
+   background-image: url(pngwing.com.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:contain;
+ }
+ section h2{
+  -webkit-text-stroke: 1px rgb(211, 211, 211);
+   color: transparent;
+ }
+
+ section span a {
+   color: #0ef;
+   text-decoration: none;
+   transition: .5s;
+ }
+ 
+ section span a:hover {
+   text-shadow: 0 0 50px #fff;
+   color: white;
+ }
+ section b{
+  color: #b8ffbe;
+  cursor: pointer;
+ }
+ section b:hover{
+  /* color: #6bff77; */
+  text-shadow: 0 0 20px  #6bff77;
+ }
+ section p{
+  max-width: 1000px;
+  background-color: #151515;
+  border-radius: 5px;
+  padding: 40px;
+  opacity: 0.9;
+ }
+
+ .break{
+  height: 2px;
+  background: linear-gradient(to right, rgb(1, 159, 43), rgb(132, 0, 255));
+}
+/* cardd------------ */
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 999;
+}
+.card button{
+  background-color: #000000;
+  color: #b8ffbe;
+  border-radius: 3px;
+}
+ /* footer-- and lets connect section */
+ footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(connection.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:contain;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-content h3 {
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+.footer-content p {
+  background-color: #000000 ;
+  font-weight:bold;
+  opacity: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 600px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 1rem;
+  color: #d1ffca;
+}
+
+.socials {
+  background-color: #000000;
+  opacity: 80%;
+  border-radius: 3px;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+  color: rgb(41, 255, 69);
+}
+
+.break-light{
+  height: 1px;
+  background: linear-gradient(to right, rgb(132, 0, 255), rgb(1, 159, 43));
+}
+.footer-bottom {
+  background: #000000;
+  padding: 10px 45px 20px 45px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  color: white;
+}
+
+.footer-bottom p a {
+  color: #d5e000;
+  font-size: 16px;
+  text-decoration: burlywood;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+}
+
+.footer-menu {
+  float: right;
+  padding: auto;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 200;
+}
+
+.footer-menu ul {
+  display: flex;
+}
+
+.footer-menu ul li {
+  display: block;
+}
+
+.footer-menu ul li a {
+  color: #cfd2d6;
+  text-decoration: none;
+} 
+
+.footer-menu ul li a:hover {
+  color: #2769da;
+  font-weight: bold;
+}
