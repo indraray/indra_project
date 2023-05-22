@@ -99,6 +99,25 @@ header h1:hover {
   padding: 40px;
   opacity: 0.9;
  }
+ @media screen and (max-width: 500px) {
+  .portfolio_div {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 2% 2%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-image: url(pngwing.com.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size:contain;
+  }
+  section p{
+    background-color: #151515;
+    border-radius: 5px;
+    padding: 20px;
+    opacity: 0.9;
+   }
+}
 
  .break{
   height: 2px;
