@@ -11,20 +11,24 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
    <header>
       <h1>Portfolio.</h1>
       <nav class="navbar">
-        <a href="#" class="active" onclick="openCard()">Education</a>
-        <a href="#" onclick="openCard()">Project</a>
-        <a href="#" onclick="openCard()">Skills</a>
-        <a href="#" onclick="openCard()">Responsibilities</a>
+         <a href="#"  class="active" onclick="openCard()">Project</a>
+         <a href="#" >Skills</a>
+         <a href="#" >Education</a>
+        <a href="#">Responsibilities</a>
       </nav>
     </header>
 
   <div class="card" id="card">
-    <h2>Heading to be given...</h2>
+     <button onclick="closeCard()">X</button>
+    <h2 class="Project">Projects</h2>
     <p>This is a pop-up card for Details!</p>
-    <button onclick="closeCard()">Close</button>
+    <img src="Images/android_dev.png" alt="" class="imaz">
+    <img src="Images/android_dev.png" alt=""class="imaz" >
+    <img src="Images/android_dev.png" alt="" class="imaz">
   </div>
 
     <div class="portfolio_div">
@@ -38,9 +42,7 @@
              As a dedicated student,
              and passion for technology drives in the field of <b>Computer Science and 
               Engineering.</b> 
-            With scholar ID of <b> 2112020</b>, I am committed to leveraging my skills and expertise 
-            to make a positive impact in the world of web development. Through my academic journey, 
-            I have acquired a understanding of programming languages and web technologies. 
+            With scholar ID of <b> 2112020</b>. <br>
             As a web developer, I possess a comprehensive skill set that enables me to design and 
             develop dynamic and user-friendly websites. 
              With a keen eye for detail and a 
@@ -50,6 +52,52 @@
     </div>
 
     <div class="break"></div>
+
+    <div class="project_class" id="Project_id">
+       <h3>Project</h3>
+
+           <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+           <lottie-player src="https://lottie.host/65662dfe-d9c5-46c3-bae2-f8ab15b7e90d/o13SCgaeJS.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+    </div> -->
+
+    <div class="break"></div>
+
+    <div class="footer-content" >
+       <h3>Skills</h3>
+       <p> Let's connect and explore the possibilities! Whether it's through sharing 
+          ideas, discussing goals, or embarking on a specific project, 
+          I'm ready to contribute and support your vision. Let's grow, learn,
+           and create something truly extraordinary!</p>
+ 
+      
+    </div>
+
+    <div class="break"></div>
+
+    <div class="footer-content" >
+       <h3>Education</h3>
+       <p> Let's connect and explore the possibilities! Whether it's through sharing 
+          ideas, discussing goals, or embarking on a specific project, 
+          I'm ready to contribute and support your vision. Let's grow, learn,
+           and create something truly extraordinary!</p>
+           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+
+           <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_rke9huuf.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player>
+      
+    </div>
+
+    <div class="break"></div>
+
+   <div class="footer-content" >
+      <h3>Responsibilities</h3>
+      <p> Let's connect and explore the possibilities! Whether it's through sharing 
+         ideas, discussing goals, or embarking on a specific project, 
+         I'm ready to contribute and support your vision. Let's grow, learn,
+          and create something truly extraordinary!</p>
+
+   </div>
+
+   <div class="break"></div>
 
    <div class="footer-content" >
       <h3>Let's Connect</h3>
@@ -66,6 +114,26 @@
          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
       </ul>
    </div>
+   
+   <div class="break"></div>
+
+   <div class="container">
+   <h3>Contact Form</h3>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Mail</label>
+    <input type="text" id="lname" name="lastname" placeholder="Mail">
+
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
 
    <div class="break-light"></div>
 
