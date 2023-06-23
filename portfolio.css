@@ -1,4 +1,13 @@
- body{
+/* Landing page *
+project
+skills
+education
+responsibilities
+lets connect
+footer
+
+*/
+body{
   background-color: black;
   cursor:auto;
   font-family: 'Courier New', Courier, monospace;
@@ -139,32 +148,136 @@ header h1:hover {
   height: 2px;
   background: linear-gradient(to right, rgb(1, 159, 43), rgb(132, 0, 255));
 }
-/* cardd------------ */
-.card {
-  width: 50%;
-  height: 40%;
-  padding: 0 0 19px 20px;
-  background-color: #1a1a1a;
-  color: white;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-  z-index: 999;
+
+ 
+.break-light{
+  height: 1px;
+  background: linear-gradient(to right, rgb(132, 0, 255), rgb(1, 159, 43));
 }
-.card button{
-  background-color: #9cffde;
-  color: #1b1b1b;
-  border-radius: 7px;
-  float: right;
+
+
+
+
+/* Project-  Section-------------------------------------------------------------------
+----------------------------------------------------------------------------------
+---------------------------------------------------------------- ----------------*/
+
+h3{
+  text-align: center;
 
 }
- /* footer-- and lets connect section */
- footer {
+.project_container{
+  background-color: #000000;
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+.project_container .project{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 330px;
+  max-width: 100%;
+  height: 350px;
+  background: rgb(30, 29, 29);
+  color: white;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 35px 80px rgba(0, 122, 14, 0.15);
+}
+.project_container .project .project_image{
+  position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.project_container .project .project_image img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project_container .project:hover {
+  height: 400px;
+}
+.project_container .project:hover .project_image {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+.project_container .project .project_content {
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  height: 35px;
+  padding: 0 20px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.project_container .project:hover .project_content  {
+  top: 100px;
+  height: 300px;
+}
+
+.project_container .project .project_content  h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr);
+}
+
+.project_container .project .project_content  p {
+  color: #ffffff;
+}
+
+.project_container .project .project_content  a {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  background: var(--clr);
+  color: white;
+  font-weight: 500;
+}
+
+.project_container .project .project_content  a:hover {
+  opacity: 0.8;
+}
+
+/* Skills  ------------------------------------------
+----------------------------------------------------- */
+.skills_section{
+  background:red;
+  padding: 10px 150px 10px 150px;
+}
+.skills_section .card{
+  height: 150px;
+  width: 150px;
+  background-color: rgb(251, 251, 139);
+  border-radius: 7px;
+}
+.skills_section .card h4{
+  text-align: center;
+  color: white;
+}
+
+/* Lets connect----------------
+------------------------------------------------------------- */
+/* footer-- and lets connect section */
+footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -223,8 +336,7 @@ header h1:hover {
 }
 
 .socials li {
-  
-  margin: 0 10px;
+  padding: 0 5px;
 }
 
 .socials a {
@@ -243,10 +355,43 @@ header h1:hover {
   color: rgb(41, 255, 69);
 }
 
-.break-light{
-  height: 1px;
-  background: linear-gradient(to right, rgb(132, 0, 255), rgb(1, 159, 43));
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
+ }
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: rgb(28, 28, 28);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
+input[type=submit]:hover {
+  background-color: #01ff0e;
+  border-radius: 8px;
+  transition: 1s;
+  color: #000000;
+  border-color: #ffcc01 2px;
+}
+
+.container {
+   background-color: black;
+  max-width: 500px;  
+  padding-left: 10%;
+  padding-bottom: 25px;
+  border-radius: 5px;
+}
+/* footer--------------------------------------------
+--------------------------------------------- */
 .footer-bottom {
   background: #000000;
   padding: 10px 45px 20px 45px;
@@ -293,58 +438,3 @@ header h1:hover {
   color: #2769da;
   font-weight: bold;
 }
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 10px;
-  resize: vertical;
- }
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: rgb(28, 28, 28);
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #01ff0e;
-  border-radius: 8px;
-  transition: 1s;
-  color: #000000;
-  border-color: #ffcc01 2px;
-}
-
-.container {
-   background-color: black;
-  max-width: 500px;  
-  padding-left: 10%;
-  padding-bottom: 25px;
-  border-radius: 5px;
-}
-
-
-/* Project-  Section-------------------------------------------------------------------
-----------------------------------------------------------------------------------
----------------------------------------------------------------- ----------------*/
-.project_class{
-  color: white;
-  text-align: center;
-}
-.project_class iframe{
-  height: 300px;
-  width: 500px;
-  padding: 10px;
-}
-.iframe-div{
-  display: flex;
-  list-style: none;
-}
-
