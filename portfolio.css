@@ -545,7 +545,7 @@ xcvhbjnkfdghjkjcvbjn*/
       text-align: center;
       font-family: var(--font-family-1);
       font-weight: 700;
-      font-size: 3rem;
+      font-size: 2rem;
       color: white;
       margin-top: 0;
     }
@@ -566,7 +566,7 @@ xcvhbjnkfdghjkjcvbjn*/
   color: #ffffff;
   font-family: var(--font-family-2);
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
   border-left: 4px solid #fff;
   border-bottom: 1px solid #ffffff;
@@ -600,14 +600,14 @@ xcvhbjnkfdghjkjcvbjn*/
   }
 }
 
-/* @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .timeline {
     margin: 0 auto;
     position: relative;
     left: 85px;
 
     .timeline-item {
-      font-size: 1.1rem;
+      font-size: 1rem;
 
       &::after {
         right: calc(var(--item-width) + 30px);
@@ -618,46 +618,10 @@ xcvhbjnkfdghjkjcvbjn*/
 
 @media only screen and (max-width: 800px) {
   .timeline-item {
-    padding: 1rem 1.5rem 1rem 0.5rem;
+    padding: 1rem 1.3rem 1rem 0.5rem;
 
     &::after {
       right: calc(var(--item-width) + 20px);
     }
-  }
-} */
-.mobile-view{
-  min-height: 100vh;
-  color: #787878;
-  display: none;
-
-}
-@media screen and (max-width:500px) {
-  .mobile-view{
-    display: block;
-    min-height: 100vh;
-    color: #01ff0e;
-    transition: 1.7s ease-in-out;
-    padding: 10px 10px 10px 10px;
-  }
-  .navbar{
-    display: none;
-  }
-  .portfolio_div{
-    display: none;
-  }
-  .project_container{
-    display: none;
-  }
-  .skills_section{
-    display: none;
-  }
-  #timeline-container{
-    display: none;
-  }
-  .timeline{
-    display: none;
-  }
-  .footer-content{
-    display: none;
   }
 }
