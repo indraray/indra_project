@@ -261,13 +261,13 @@ h3{
 /* Skills  ------------------------------------------
 ----------------------------------------------------- */
 .skills_section{
-  background:red;
+  background:rgb(0, 0, 0);
   padding: 10px 150px 10px 150px;
 }
 .skills_section .card{
   height: 150px;
   width: 150px;
-  background-color: rgb(19, 19, 19);
+  background-color: rgb(47, 47, 47);
   border-radius: 7px;
 }
 .skills_section .card h4{
@@ -531,8 +531,8 @@ xcvhbjnkfdghjkjcvbjn*/
   background: rgb(0, 17, 46);
   background: linear-gradient(
     171deg,
-    rgba(0, 17, 46, 1) 0%,
-    rgba(29, 21, 148, 1) 100%
+    rgb(22, 22, 22) 0%,
+    rgb(0, 0, 0) 100%
   );
   /* overflow: auto; */
   padding: 60px 0;
@@ -600,7 +600,7 @@ xcvhbjnkfdghjkjcvbjn*/
   }
 }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .timeline {
     margin: 0 auto;
     position: relative;
@@ -623,5 +623,41 @@ xcvhbjnkfdghjkjcvbjn*/
     &::after {
       right: calc(var(--item-width) + 20px);
     }
+  }
+} */
+.mobile-view{
+  min-height: 100vh;
+  color: #787878;
+  display: none;
+
+}
+@media screen and (max-width:500px) {
+  .mobile-view{
+    display: block;
+    min-height: 100vh;
+    color: #01ff0e;
+    transition: 1.7s ease-in-out;
+    padding: 10px 10px 10px 10px;
+  }
+  .navbar{
+    display: none;
+  }
+  .portfolio_div{
+    display: none;
+  }
+  .project_container{
+    display: none;
+  }
+  .skills_section{
+    display: none;
+  }
+  #timeline-container{
+    display: none;
+  }
+  .timeline{
+    display: none;
+  }
+  .footer-content{
+    display: none;
   }
 }
