@@ -600,7 +600,7 @@ xcvhbjnkfdghjkjcvbjn*/
   }
 }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .timeline {
     margin: 0 auto;
     position: relative;
@@ -624,4 +624,4 @@ xcvhbjnkfdghjkjcvbjn*/
       right: calc(var(--item-width) + 20px);
     }
   }
-}
+} */
