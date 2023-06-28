@@ -1,48 +1,47 @@
-.explore_section{
-   color: white;
-   width: 100%;
-   height:auto;
-   padding-bottom: 30px;
-   background-color:  rgb(40, 40, 40);
- }
- .explore_section h1{
-   color: rgb(255, 255, 255);
-   text-align: center;
-   padding: 10px 0;
-   font-family: sans-serif;
- }
- .elplore_contents_all{
-   display: flex;
-   width: 80%;
-   height: auto;
-   flex-wrap: wrap;
-   margin: auto;
-   justify-content: space-around;
- }
- .explore_items{
-   padding: 20px;
-   margin: 10px 10px 10px 10px;
-   min-width: 250px;
-   max-width: 300px;
-   border-radius: 15px 15px 15px 15px;
-   color: white;
-   margin: 10px 0;
-   flex-basis: 30%;
-   box-shadow: 0px 0px 5px 1px rgb(38, 255, 0);
-   background-color: #000000;
- }
- .explore_items img{
-   height: 100px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   border-radius: 10px 2px 10px 2px;
- }
- .explore_items button{
-   display: flex;
-   margin: auto;
-   padding: 5px 5px 5px 5px;
-   border-radius: 5px;
-   background-color: rgb(107, 107, 107);
-   color: white;
- }
+body{
+  background-color: rgb(255, 135, 135);
+}
+.skills_section{
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 90px;
+}
+.skills_section h2{
+  text-align: center;
+  color: rgb(174, 119, 255);
+  cursor: none;
+}
+
+
+.all-skills{
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card{
+  height: 170px;
+  width: 170px;
+  text-align: center;
+  background-color: rgb(23, 23, 23);
+  color: white;
+  border-radius: 7px;
+  margin-left: 100px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  border: 1px solid rgb(26, 49, 24);
+}
+.card ion-icon{
+  padding-top: 40px;
+  font-size: 40px;
+  color: rgb(128, 158, 255);
+}
+.all-skills :hover {
+  color: #42ff58;
+  background-color: #222222;
+}
